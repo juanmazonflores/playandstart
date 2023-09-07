@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+#PALETA_DE_COLORES {
+    color: #080202#3D0000 #0D0D0D #DB241B #950101  #AB1C15
+    #F6A700 #D3D2D2 #A7A7A7 #FFFFFF  ;
+  }
+  
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #080202;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+.swiper-button-next::after{
+    font-size: 25px;
+}
+
+.swiper-button-next{
+    color:#DB241B;
+}
+
+.swiper-button-prev{
+    color: #DB241B;
+}
+
+.swiper-pagination-bullet{
+    background-color: #D3D2D2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #DB241B;
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index:1000;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 180px;
+}
+
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1{
+    width:0;
+}
+
+.logo-2{
+    width:150px;
+}
+
+.socials{
+    display: flex;
+}
+
+.social{
+    margin:0 10 px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #DB241B;
+    border-radius: 50%;
+}
+
+.social:hover{
+    background-color: #DB241B;
+}
+
+.social img{
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF ;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #DB241B;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.slider-txt{
+    margin-left: 85px;
+    width: 50%;
+}
+
+.slider-txt h1{
+    font-size: 70px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-txt p{
+    font-size: 18px;
+    color:#A7A7A7 
+}
+
+.botones{
+    margin-top: 50px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 15px 35px;
+    border:2px solid #DB241B;
+    color:#FFFFFF;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+ 
+.btn-1:hover{
+    background-color: #DB241B;
+}
+
+.slider-img{
+    width: 50%;
+}
+
+.slider-img img{
+    margin-right: 225px;
+    width: 550px;
+}
+
+.peliculas{
+    background-color: #3D0000;
+}
+
+.pelicula-titulo h2{
+    font-size: 75px;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.director-titulo h2{
+    font-size: 75px;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.info-txt p{
+    font-size: 20px;
+    color: #A7A7A7;
+    margin-bottom: 25px;
+}
+
+.premio{
+    padding: 100px 0px;
+    background-color: #3D0000;
+}
+
+.premio-info h2{
+    font-size: 75px;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.premio-txt{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*FOOTER*/
+.footer{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-ir-arriba {
+    display: none;
+    cursor: pointer;
+  
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    background: #DB241B;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+  
+    box-shadow: 0px 12px 7px rgba(0, 0, 0, .1);
+    transition: 300ms ease;
+  }
+  
+  #btn-ir-arriba:hover {
+    background: #F6A700;
+    transform: translateY(-0.5rem);
+  }
+  
+  #btn-ir-arriba svg {
+    width: 25px;
+    fill: none;
+    stroke: white;
+    stroke-width: 3px;
+  }

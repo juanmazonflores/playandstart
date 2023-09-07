@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu container">
+            <img id="logo" onclick="mostrarMensajeInicial()" class="logo-1" src="./img/logo.png" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="./img/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <nav class="navbar">
+                <!– MENU 1 EL DE LA IZQUIEDA–>
+                    <div class="menu-1">
+                        <ul>
+                            <li><a href="#peliculas">Peliculas</a></li>
+                            <li><a href="#director">Director </a></li>
+                            <li><a href="#premios">Premios </a></li>
+                            <li><a href="#mapa">Cine Cercano</a></li>
+                        </ul>
+                    </div>
+                    <img class="logo-2" id="logo" onclick="mostrarMensajeInicial()" src="./img/logo.png" alt="">
+
+                    <!– MENU 2 EL DE LA DERECHA–>
+                        <div class="menu-2">
+                            <ul>
+                                <li><a href="#footer">Contacto</a></li>
+                            </ul>
+                            <div class="socials">
+                                <a href="#footer">
+                                    <div class="social">
+                                        <img src="./img/s1.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+            </nav>
+        </div>
+
+        <!–BANNERS–>
+            <div class="header-content container">
+                <div class="swiper mySwiper-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <!–TEXTO BANNER–>
+                                    <div class="slider-txt">
+                                        <h1>Play&Start</h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quas esse,
+                                            cumque
+
+                                        </p>
+                                        <!–BOTON BANNER–>
+                                            <div class="botones">
+                                                <a href="#peliculas" class="btn-1">Ver pelicula Destacadas</a>
+                                            </div>
+                                    </div>
+                                    <!–IMAGENSOTA BANNER–>
+                                        <div class="slider-img">
+                                            <img src="./img/slider1.jpg" alt="">
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <!–TEXTO BANNER–>
+                                    <div class="slider-txt">
+                                        <h1>Play&Start</h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quas esse,
+                                            cumque
+                                            voluptatem tempora porro fuga, exercitationem animi repellat ad autem
+                                            doloremque
+                                            dolor, vero provident dolorem quisquam saepe sunt itaque.
+                                        </p>
+                                        <!–BOTON BANNER–>
+                                            <div class="botones">
+                                                <a href="#director" class="btn-1">Ver director destacado</a>
+                                            </div>
+                                    </div>
+                                    <!–IMAGENSOTA BANNER–>
+                                        <div class="slider-img">
+                                            <img src="./img/slider2.jpg" alt="">
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <!–TEXTO BANNER–>
+                                    <div class="slider-txt">
+                                        <h1>Play&Start</h1>
+                                        <p>
+                                            Descubre los proximos premios y reconocimientos en el mundo del cine
+                                        </p>
+                                        <!–BOTON BANNER–>
+                                            <div class="botones">
+                                                <a href="#premios" class="btn-1">Ver proximos premios</a>
+                                            </div>
+                                    </div>
+                                    <!–IMAGENSOTA BANNER–>
+                                        <div class="slider-img">
+                                            <img src="./img/slider3.webp" alt="">
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+    </header>
+
+    <!– SECCION PELICULAS DESTACADAS–>
+        <main id="peliculas" class="peliculas">
+            <div class="pelicula-titulo">
+                <h2>Peliculas destacadas</h2>
+            </div>
+            <div class="info-txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veritatis aliquid! Magnam,
+                    placeat, id praesentium, tenetur accusantium a minima quam autem rerum alias mollitia quia aliquid
+                    error. A, numquam sed?</p>
+            </div>
+        </main>
+
+        <!– SECCION DIRECTOR DESTACADO–>
+            <section id="director" class="director">
+                <div class="director-titulo">
+                    <h2>Director Destacado</h2>
+                </div>
+                <div class="info-txt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veritatis aliquid! Magnam,
+                        placeat, id praesentium, tenetur accusantium a minima quam autem rerum alias mollitia quia aliquid
+                        error. A, numquam sed?</p>
+                </div>
+            </section>
+
+            <!– SECCION PREMIOS Y RECONOCIMIENTOS–>
+                <section id="premios" class="premio">
+                    <div class="premio-info container">
+                        <h2>Premios y reconocimientos</h2>
+                    </div>
+                    <div class="info-txt">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veritatis aliquid! Magnam,
+                            placeat, id praesentium, tenetur accusantium a minima quam autem rerum alias mollitia quia aliquid
+                            error. A, numquam sed?</p>
+                    </div>
+                </section>
+
+
+                <!– SECCION FOOTER–>
+                    <footer id="footer" class="footer container">
+
+                        <img class="logo-2" src="./img/logo.png" alt="">
+
+                    </footer>
+
+                    <button id="btn-ir-arriba">
+                        <svg viewBox="0 0 24 24">
+                            <path d="m4 16 8-8 8 8"></path>
+                        </svg>
+                    </button>
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+                    <script src="./js/script.js"></script>
+</body>
+
+</html>
