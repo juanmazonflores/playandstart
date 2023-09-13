@@ -1,3 +1,5 @@
+
+//BOTON ARRIBA
 function mostrarMensajeInicial() {
 
     if (confirm('Este sitio esta en desarrollo, disculpe las molestias')) {
@@ -9,6 +11,7 @@ function mostrarMensajeInicial() {
   }
   
 
+//DESLIZAMIENTO DE BANNER 
 var swiper=new Swiper(".mySwiper-1", {
     slidesPerView:1,
     spaceBetween:30,
@@ -23,6 +26,7 @@ var swiper=new Swiper(".mySwiper-1", {
     }
 });
 
+//DESLIZAMIENTO DE PELICULAS 
 var swiper=new Swiper(".mySwiper-2", {
     slidesPerView:3,
     spaceBetween:20,
@@ -36,7 +40,7 @@ var swiper=new Swiper(".mySwiper-2", {
         0:{
             slidesPerView:1,
         },
-        520:{
+        750:{
             slidesPerView:2,
         },
         950:{
@@ -55,6 +59,8 @@ tabInputs.forEach(function(input){
         thisSwiper.swiper.update();
     })
 })
+
+//BOTON ARRIBA
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -76,3 +82,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
   });
+
+//RECUPERAR INFORMACION DE FORMULARIO
+const contactoForm = document.getElementById('contacto-form');
+
+contactoForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const mensaje = document.getElementById("mensaje").value;
+
+  alert('Gracias por contactarnos - Nombre: ' + nombre + '- Email: ' + email + '- Mensaje: ' + mensaje);
+
+  contactoForm.reset();
+});

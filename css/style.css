@@ -50,14 +50,17 @@ body {
     background-color: #DB241B;
 }
 
+/* #region HEADER */
+
 .menu{
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     z-index:1000;
+    background-color: #080202
 }
 
 .navbar{
@@ -118,6 +121,7 @@ body {
     color: #DB241B;
 }
 
+/* #region BANNER */
 #menu{
     display: none;
 }
@@ -186,6 +190,7 @@ body {
     margin-right: 225px;
     width: 550px;
 }
+/* #region PELICULAS */
 
 .peliculas{
     background-color: #3D0000;
@@ -296,6 +301,8 @@ body {
     margin-bottom: 800;
 }
 
+/* #region DIRECTOR */
+
 .info{
     padding: 0px 0px;
     display: flex;
@@ -386,6 +393,7 @@ body {
     background-color: #AB1C15;
 }
 
+/* #region PREMIO*/
 .premio{
     padding: 100px 0px;
     background-color: #3D0000;
@@ -433,22 +441,89 @@ body {
     padding: 100px 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: #080202;
+
 }
 
-.links h4{
+.footer h4{
     color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #080202;
+ 
+}
+input,textarea {
+
+border:2px solid #DB241B;
+background-color:#080202;
+display: inline-block;
+padding: 15px 35px;
+font-weight: 800;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-right: 20px;
+border-radius: 50px;
+margin-bottom: 1rem;
+color: #FFFFFF;
 
 }
 
-.links ul li a{
-    color: #FFFFFF;
-    font-size: 16px;
-    margin-bottom: 5px;
+.btn-forms{
     display: inline-block;
+    border:2px solid #DB241B;
+    background-color:#DB241B;
+    padding: 15px 35px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-right: 20px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
 }
 
+.btn-forms:hover{
+    background-color: #080202;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer p{
+    color: #FFFFFF;
+    padding: 2rem 0rem;
+}
+
+.redes-sociales-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+  }
+  
+  .fa-brands {
+    font-size: 2rem;
+    color: #DB241B;
+  }
+  
+  .fa-brands:hover {
+    color: #FFFFFF}
+  
+  .fa-brands:active {
+    color: #DB241B;
+  }
+  
+
+/*region BOTON ARRIBA*/
 #btn-ir-arriba {
     display: none;
     cursor: pointer;
@@ -479,6 +554,9 @@ body {
     stroke: white;
     stroke-width: 3px;
   }
+
+
+
 
 /*PARA QUE SEA RESPONSIVA*/
 @media(max-width:991px){
@@ -562,29 +640,42 @@ body {
     }
     .info{
         padding: 30px;
+
+    }
+    .info-txt h2{
+        font-size: 40px;
+    }
+    .info-content{
         flex-direction: column;
-    }
-    .info-img{
-        width: 100%;
+        align-items: center;
         text-align: center;
-    }
-    .info-img img{
-        width: 400px;
-        height: 200px;
-        margin-bottom: 25px;
+        margin-left: 0%;
     }
     .info-txt{
         width: 100%;
-        text-align: center;
+        margin-top: 0px;
+        
     }
-
-    .info-txt h2{
-        font-size: 50px;
+    .info-txt p{
+        margin-bottom: 5px;
+    }
+    .info-sec{
+        flex-direction: column;
+        padding: 0px 35px;
+    }
+    .info-1{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+    .info-2{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .info-img{
+        display:none
     }
     
-    .info-txt p{
-        font-size: 16px
-    }
     .btn-1{
         font-size: 16px
     }
@@ -611,7 +702,45 @@ body {
         flex-direction: column;
         text-align: center;
     }
+    .forms{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        background-color: #080202;
+    }
     .links h4{
         margin: 25px 0px 10px 0px;
     }
+}
+
+@media(max-width:768px){
+
+    .slider-txt p{
+        font-size: 10px;
+    }
+
+    .slider-img img{
+        margin-right: 0px;
+        width: 250px;
+    }
+
+    .tabs{
+        padding: 20px 30px;
+    }
+
+    .info-1 img{
+        display: none;
+    }
+
+    .btn-1{
+        font-size: 14px
+    }
+
+    .forms{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        background-color: #080202;
+    }
+
 }
