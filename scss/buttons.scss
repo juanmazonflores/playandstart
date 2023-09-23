@@ -1,0 +1,55 @@
+#btn-ir-arriba {
+    @include button;
+  
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    background: $color-secundario;
+    color: $color-texto2;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+  
+    box-shadow: 0px 12px 7px rgba(0, 0, 0, .1);
+    transition: 300ms ease;
+
+    svg {
+        width: 25px;
+        fill: none;
+        stroke: $color-texto2;
+        stroke-width: 3px;
+    }
+
+    &:hover {
+        background: $color-terciario;
+        transform: translateY(-0.5rem);
+    }
+}
+  
+  
+
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+.swiper-button-next::after{
+    font-size: 25px;
+}
+
+.swiper-button-next{
+    color:$color-secundario;
+}
+
+.swiper-button-prev{
+    color: $color-secundario;
+}
+
+.swiper-pagination-bullet{
+    background-color: $color-seccion3;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: $color-secundario;
+}

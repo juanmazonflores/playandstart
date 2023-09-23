@@ -1,0 +1,8 @@
+@mixin buttonBlock {
+    cursor: pointer;
+    display: block;
+}
+@mixin buttonNone {
+    cursor: pointer;
+    display: none;
+}
